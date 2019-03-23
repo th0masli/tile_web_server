@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="./static/css/styles.css" rel="stylesheet" media="screen" type="text/css">
+
+    <title>tile puzzle</title>
+
+    <style>
+        .grid-container {
+            display: grid;
+            grid-gap: 0px;
+            position: relative;
+            right: 60px;
+        }
+        .btn {
+            position: relative;
+            right: 75px;
+        }
+        .origin_img {
+            position: relative;
+            left: 20px;
+        }
+    </style>
+  </head>
+
+  <body>
+
+    <br>
+    <h3 class="text-center">
+      <div>
+          <p>To Apple</p>
+      </div>
+    </h3>
+    <br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+    		  <!--<h2> A* for Starry Night. It is perfect, isn't it? </h2>-->
+    		  <div class="grid-container start">
+
+                  <div class="row">
+      				<div class="cell" id=6 data-pos="0,0"><img src="./static/img/Las Meninas/6.jpg" width="200" height="200"></div>
+      				<div class="cell" id=4 data-pos="0,1"><img src="./static/img/Las Meninas/4.jpg" width="200" height="200"></div>
+                    <div class="cell" id=7 data-pos="0,2"><img src="./static/img/Las Meninas/7.jpg" width="200" height="200"></div>
+    			  </div>
+
+    			  <div class="row">
+      				<div class="cell" id=8 data-pos="1,0"><img src="./static/img/Las Meninas/8.jpg" width="200" height="200"></div>
+      				<div class="cell" id=5 data-pos="1,1"><img src="./static/img/Las Meninas/5.jpg" width="200" height="200"></div>
+                    <div class="cell" id="blank" data-pos="1,2"></div>
+    			  </div>
+
+    			  <div class="row">
+      				<div class="cell" id=2 data-pos="2,0"><img src="./static/img/Las Meninas/2.jpg" width="200" height="200"></div>
+      				<div class="cell" id=9 data-pos="2,1"><img src="./static/img/Las Meninas/9.jpg" width="200" height="200"></div>
+      				<div class="cell" id=1 data-pos="2,2"><img src="./static/img/Las Meninas/1.jpg" width="200" height="200"></div>
+    			  </div>
+
+              </div>
+
+              <button type="button" class="btn btn-dark magic" id="cheat">Magic</button>
+
+    		</div>
+
+
+
+        <div class="col-md-6 origin_img">
+          <img src="./static/img/Las Meninas.jpg" width="600" height="600">
+        </div>
+
+      </div>
+
+    </div>
+
+    <footer class="text-center">
+      <div>
+          <p>&copy; Copyright 2019 DaCiHua@StonyBrook</p>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    -->
+
+    <script type="text/javascript" src="./static/js/jquery.js"></script>
+
+    <script type="text/jscript" src="./static/js/hashtable.js"></script>
+    <script type="text/jscript" src="./static/js/hashset.js"></script>
+    <script type="text/jscript" src="./static/js/priority_queue.js"></script>
+    <script type="text/jscript" src='./static/js/tile_solver.js'></script>
+    <script type="text/javascript" src="./static/js/play.js"></script>
+  </body>
+</html>

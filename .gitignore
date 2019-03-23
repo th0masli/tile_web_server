@@ -1,0 +1,14 @@
+*.py[cod]
+*.so
+*.egg
+*.egg-info
+*.pyc
+dist
+build
+
+# My configurations:
+db.sqlite3
+nohup.out
+img_cache
+.idea
+.DS_Store
